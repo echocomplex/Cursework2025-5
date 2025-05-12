@@ -33,6 +33,7 @@ public:
     void append (const SportEvent& unit) noexcept;
     void remove (const unsigned int index) noexcept;
     unsigned int size () noexcept;
+    unsigned int size () noexcept;
     
     void getScheduleBySport(List <SportEvent>& result, const std::string& sportType) const noexcept;
     void getTopTeams(List <std::string>& result, const std::string& sportType) const noexcept;

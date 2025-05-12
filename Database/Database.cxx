@@ -80,7 +80,6 @@ void Database::getScheduleBySport(List<SportEvent>& result, const std::string& s
 void Database::getTopTeams(List<std::string>& result, const std::string& sportType) const noexcept {
     std::map<std::string, int> teamWins;
 
-    // Считаем победы для каждой команды
     for (unsigned int i = 0; i < data.length(); ++i) {
         if (data[i].getSportType() == sportType) {
             std::string winner = data[i].getWinner();
@@ -107,7 +106,6 @@ void Database::getLastYearChampions(List<std::string>& result, const List<std::s
         const std::string& sportType = sportTypes[st];
         std::map<std::string, int> teamWins;
 
-        // Считаем победы за прошлый год
         for (unsigned int i = 0; i < data.length(); ++i) {
             if (data[i].getSportType() == sportType) {
                 std::string dateStr = data[i].getDate();

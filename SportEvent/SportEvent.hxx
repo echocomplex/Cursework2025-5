@@ -10,7 +10,7 @@ private:
     std::string team1;
     std::string team2;
     std::string date;
-    std::string result; // "Win1" или "Win2"
+    std::string result;
 public:
     SportEvent(void) noexcept;
     SportEvent(const std::string& sportType, const std::string& team1, 
